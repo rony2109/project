@@ -1,0 +1,46 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    z-index: 1000;
+    /* שומר על הניווט מעל התוכן */
+    height: 60px;
+    /* גובה מוגדר */
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    /* יישור אנכי של התוכן */
+}
+
+.navbar li {
+    padding: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.content {
+    padding-top: 60px;
+    /* תואם לגובה של הניווט */
+}
+
+section {
+    height: 100vh;
+    /* כל מקטע בגובה המסך */
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+}
