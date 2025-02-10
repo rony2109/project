@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Italianno&family=Playball&family=Satisfy&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    padding-top: 100px;
+}
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #1AE0EC;
+    z-index: 1000;
+    height: fit-content;
+    align-items: flex-start;
+}
+
+label {
+    color: rgba(29, 39, 100, 255);
+}
+
+nav {
+    display: flex;
+}
+
+input[type="checkbox"] {
+    display: none;
+
+}
+
+#hamburger {
+    display: none;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    height: fit-content;
+    align-items: center;
+
+}
+
+nav ul li {
+    display: flex;
+}
+
+nav ul li a {
+    width: 150px;
+    text-decoration: none;
+    line-height: 2;
+    text-align: center;
+    font-size: 1.5em;
+    color: rgba(29, 39, 100, 255);
+}
+
+nav ul li a:hover {
+    background-color: rgba(29, 39, 100, 255);
+    color: rgb(187, 226, 239);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#logoName {
+    display: flex;
+    align-items: center;
+}
+
+.rony {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 100px;
+    border: 1px, solid, rgba(29, 39, 100, 255);
+}
+
+.logoName {
+    font-family: Playball, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: rgba(29, 39, 100, 255);
+    padding-left: 20px;
+}
+
+.opening {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/felixMedium.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin: auto;
+}
+
+.opening div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.opening div h1 {
+    font-family: hebbo;
+    font-size: 8rem;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 25px rgba(255, 255, 255, 0.5), 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.opening div p {
+    font-family: hebbo;
+    margin-top: 20px;
+    color: white;
+    font-size: 1.7rem;
+    text-align: center;
+    background-color: rgb(14, 14, 66, 0.5);
+    border-radius: 20%;
+    margin: auto;
+
+}
+
+#buttons {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+#buttons button {
+    margin: 20px;
+    background-color: #1AE0EC;
+    width: 153px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.progicons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(227, 227, 235);
+}
+
+.zhuiot {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(29, 39, 100, 255);
+    color: white;
+}
+
+#project {
+    height: 1014px;
+    background-color: #EBFEFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 1189px;
+    height: 718px;
+    flex-direction: column;
+    background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+    justify-content: center;
+    align-items: center;
+}
+
+#herenow {
+    display: grid;
+    grid-template-rows: 204px 38px 60px;
+
+}
+
+#herenow h1 {
+    font-family: Satisfy, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 160px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-shadow: 0px 0px 36px #00000087;
+    opacity: 1;
+    margin: auto;
+
+}
+
+
+#herenow h2 {
+    /* font-family: Varela Round, serif; */
+    font-weight: 400;
+    font-style: normal;
+    margin: auto;
+    color: #FFFFFF;
+
+}
+
+#herenow p {
+
+    color: #F9F9F9;
+    font-size: 16px;
+    margin: auto;
+}
+
+form {
+    display: grid;
+    column-gap: 37px;
+    grid-template-columns: 418px 418px 208px;
+    grid-template-rows: 20px 50px;
+
+
+    opacity: 1;
+}
+
+label {
+    color: #F9F9F9;
+    grid-row: 1;
+}
+
+input {
+    grid-row: 2;
+    background: #F6F6F624 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+}
+
+button {
+    grid-row: span 2;
+    height: 50px;
+    align-self: self-end;
+
+}
+
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .rony {
+        margin-left: 0;
+
+    }
+
+    #hamburger {
+        display: block;
+
+    }
+
+    input[type="checkbox"]:checked~.navbar-links {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    nav ul li {
+        flex-direction: column;
+        background-color: #1AE0EC;
+        margin: 0;
+        align-items: center;
+        padding: 14px;
+    }
+
+    #herenow {
+
+        grid-template-rows: 93px 22px 120px;
+    }
+
+    #herenow h1 {
+        font-size: 60px;
+    }
+
+    #herenow h2 {
+        font-size: 18px;
+
+
+    }
+
+    #herenow p {
+        width: 318px;
+        height: 120px;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 302px;
+        row-gap: 10px;
+
+    }
+
+    label {
+        height: 12px;
+    }
+
+    input {
+        height: 36px;
+    }
+
+    button {
+        width: 302px;
+
+    }
+
+    .container {
+        width: auto;
+    }
+
+
+}
