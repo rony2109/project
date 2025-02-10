@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Italianno&family=Playball&family=Satisfy&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    /* padding-top: 100px; */
+    font-family: Heebo, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #1AE0EC;
+    z-index: 1000;
+    height: fit-content;
+    align-items: flex-start;
+}
+
+label {
+    color: rgba(29, 39, 100, 255);
+}
+
+nav {
+    display: flex;
+}
+
+input[type="checkbox"] {
+    display: none;
+
+}
+
+#hamburger {
+    display: none;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    height: fit-content;
+    align-items: center;
+
+}
+
+nav ul li {
+    display: flex;
+}
+
+nav ul li a {
+    width: 150px;
+    text-decoration: none;
+    line-height: 2;
+    text-align: center;
+    font-size: 1.5em;
+    color: rgba(29, 39, 100, 255);
+}
+
+nav ul li a:hover {
+    background-color: rgba(29, 39, 100, 255);
+    color: rgb(187, 226, 239);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#logoName {
+    display: flex;
+    align-items: center;
+}
+
+.rony {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 100px;
+    border: 1px, solid, rgba(29, 39, 100, 255);
+}
+
+.logoName {
+    font-family: Playball, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: rgba(29, 39, 100, 255);
+    padding-left: 20px;
+}
+
+#opening {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/felixMedium.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin: auto;
+}
+
+#opening div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#opening div h1 {
+    font-family: hebbo;
+    font-size: 10rem;
+    color: rgb(230, 255, 255);
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 25px rgba(255, 255, 255, 0.5), 0 0 5px rgba(0, 0, 0, 0.3);
+
+}
+
+#opening div p {
+    font-family: hebbo;
+    margin-top: 30px;
+    color: rgb(230, 255, 255);
+    font-size: 3rem;
+    text-align: center;
+    /* background-color: rgb(14, 14, 66, 0.5);
+    border-radius: 20%; */
+    margin: auto;
+}
+
+.progicons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(227, 227, 235);
+}
+
+#aboutme {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, white 10%, #1AE0EC 40%, #1AE0EC 60%, white 90%);
+}
+
+#aboutmeText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+.ronybig {
+    display: flex;
+    border-radius: 50%;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    /* padding-top: 50px; */
+}
+
+#aboutme h1 {
+    margin-top: 30px;
+    color: #0e083c;
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+#aboutme p {
+    font-family: Hebbo, sans-serif;
+    display: block;
+    margin: auto;
+    width: 600PX;
+    text-align: center;
+    margin-top: 30px;
+    color: #000000;
+    font-size: 1.2rem;
+}
+
+#aboutme button {
+    display: block;
+    font-family: heebo;
+    margin: auto;
+    padding: 10px;
+    width: 300px;
+    margin-top: 50px;
+    font-size: 1rem;
+    border-radius: 25px;
+
+}
+
+#aboutme button:hover {
+    font-weight: bold;
+    background-color: rgba(29, 39, 100, 255);
+    color: rgb(187, 226, 239);
+    cursor: pointer;
+}
+
+section a {
+    text-decoration: none;
+}
+
+#myJobs {
+    /* margin-top: 50px; */
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 240, 248);
+
+}
+
+#myJobs h2 {
+    /* display: block; */
+    color: darkblue;
+    font-size: 5rem;
+    text-align: center;
+}
+
+#gallery {
+    margin-top: 50px;
+    display: grid;
+    /* grid-template-columns: repeat(3, 405px); */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 518px);
+    gap: 20px;
+    margin-bottom: 50px;
+    width: 70vw;
+}
+
+
+
+#miniproject {
+    display: grid;
+    grid-template-rows: 238px 70px 70px 70px 70px;
+    justify-self: center;
+    align-content: center;
+    border-radius: 15px;
+    align-items: center;
+    background-color: white;
+
+}
+
+#miniproject:hover {
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5)
+}
+
+.miniPPic {
+    /* height: fit-content; */
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    /*  object-position: center; */
+    border-radius: 15px 15px 0 0;
+
+}
+
+#picLink {
+    /* height: fit-content; */
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover;
+            object-position: center; */
+    /* border-radius: 15px 15px 0 0; */
+
+}
+
+#miniproject h3 {
+    /* padding-top: 30px; */
+    font-size: 1.7rem;
+    text-align: center;
+    padding-top: 15px;
+    font-family: Playball, Hebbo, sans-serif;
+
+}
+
+#miniproject p {
+    width: 80%;
+    font-size: 1rem;
+    text-align: justify;
+
+    margin: auto;
+
+}
+
+.sicons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.sicons img {
+    width: 50px;
+    height: 50px;
+
+}
+
+#miniproject #go2 {
+    width: 200px;
+    height: 30px;
+    padding: 2px 10px 2px 10px;
+    margin: auto;
+    font-size: 1.5rem;
+    background-color: #1AE0EC;
+    border-radius: 25px;
+    border: 1px solid darkblue;
+    text-align: center;
+    line-height: 1;
+    margin-top: 0px;
+    /* align-items: flex-start; */
+}
+
+#contact {
+    margin-top: 80px;
+    /* margin-bottom: 50px; */
+    display: flex;
+    /* width: 100vw; */
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* align-items: center;
+    justify-content: center; */
+    background-color: rgba(29, 39, 100, 255);
+    /* background-color: fuchsia; */
+    overflow: hidden;
+}
+
+#contact img {
+    height: 600px;
+    /* width: fit-content; */
+    /* object-fit: cover; */
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    padding: 20 px;
+    margin: auto;
+    background-color: rgba(29, 39, 100, 255);
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* form button {
+    background-color: #1AE0EC;
+    border-radius: 25px;
+    border: 1px solid darkblue;
+}
+
+form button:hover {
+    font-weight: bold;
+} */
+
+form h3 {
+    font-size: 2rem;
+}
+
+form p {
+    color: white;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+form label {
+    color: white;
+    line-height: 1.5;
+
+}
+
+form input {
+    line-height: 1.5;
+}
+
+#inputButton {
+    height: 50px;
+    width: 100px;
+    margin: auto;
+    background-color: #1AE0EC;
+}
+
+#envelop {
+
+    margin: auto;
+    /* background-color: transparent; */
+    /* transform: rotate(-30deg); */
+    background-color: transparent;
+    object-fit: cover;
+}
+
+#contactline {
+    display: grid;
+    /* grid-template-rows: repeat(2, 60px); */
+    grid-template-rows: max-content;
+    grid-template-columns: repeat(6, 1fr);
+    padding-top: 20px;
+    background-color: #1AE0EC;
+    /* height: 100px; */
+    align-items: center;
+
+
+    /* justify-content: space-around; */
+    justify-items: center;
+
+}
+
+
+.contactdit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 150px;
+
+}
+
+.contactdit p {
+    padding-top: 10px;
+    font-size: 1.3rem;
+    margin: auto;
+}
+
+#contactline img {
+    width: 40px;
+    height: 40px;
+}
+
+.zhuiot {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(29, 39, 100, 255);
+    color: white;
+}
+
+@media (max-width: 578px),
+(max-width: 991.98px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+
+    }
+
+    .rony {
+        margin-left: 0;
+
+    }
+
+    #hamburger {
+        display: block;
+
+    }
+
+    input[type="checkbox"]:checked~.navbar-links {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    nav ul li {
+        flex-direction: column;
+        /* width: 100vw; */
+        background-color: #1AE0EC;
+        margin: 0;
+        align-items: center;
+        /* width: 200%; */
+        /* margin: auto; */
+        padding: 14px;
+    }
+
+    #opening {
+        height: auto;
+        padding-top: 80px;
+    }
+
+
+    #opening div h1 {
+        font-size: 8rem;
+    }
+
+    #opening div p {
+
+        font-size: 2rem;
+        padding-bottom: 50px;
+
+    }
+
+    #aboutme h1 {
+        margin-top: 30px;
+        color: #0e083c;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+
+    }
+
+    #aboutme p {
+        font-family: Hebbo, sans-serif;
+        display: block;
+        margin: auto;
+        width: 330px;
+        text-align: center;
+        margin-top: 30px;
+        color: #000000;
+        font-size: 18 px;
+    }
+
+
+
+    #gallery {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+
+    }
+
+    #myJobs h2 {
+        font-size: 40px;
+    }
+
+    /* 
+    #contact img {
+        display: none;
+
+    } */
+
+
+
+
+    section p {
+        font-family: Hebbo, sans-serif;
+        display: block;
+        margin: auto;
+        width: 350px;
+        text-align: center;
+        margin-top: 30px;
+        color: #000000;
+        font-size: 1.2rem;
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 50px;
+        /* width: 393px; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact img {
+        height: 161px;
+        width: 185px;
+
+
+    }
+
+    form {
+        width: 310px;
+    }
+
+    labet {
+        width: 310px;
+    }
+
+    input {
+        width: 310px;
+    }
+
+    #contactline img {
+        width: 25px;
+        height: 25px;
+    }
+
+    #contactline {
+        display: grid;
+        /* grid-template-rows: repeat(2, 60px); */
+        grid-template-rows: repeat(3, 100px);
+        grid-template-columns: repeat(2, 1fr);
+        /* padding-top: 20px; */
+        background-color: #1AE0EC;
+        /* height: 100px; */
+        align-items: center;
+
+
+        /* justify-content: space-around; */
+        justify-items: center;
+
+    }
+
+
+
+}
