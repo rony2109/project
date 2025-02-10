@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Satisfy&family=Varela+Round&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    direction: rtl;
+    font-family: Heebo, serif;
+
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+}
+
+#background {
+    background-image: url(../images/camera.jpg);
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+
+}
+
+#forme {
+    background-image: url(../images/1554232398.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    background-color: rgba(255, 255, 255, 0);
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+h3 {
+    font-family: Heebo, serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #020253;
+    font-size: 43px;
+    height: 150px;
+}
+
+p {
+
+    color: #020253;
+    font-size: 20px;
+    text-align: center;
+    height: 80px;
+    line-height: 29px;
+
+
+
+}
+
+#solution {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+
+}
+
+label {
+    color: #020253;
+    height: 24px;
+    width: 300px;
+    margin-top: 24px;
+
+}
+
+input {
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: none;
+    border-bottom: 4px solid #020253;
+    height: 50px;
+}
+
+#send {
+    margin-top: 33px;
+    height: 50px;
+    width: 166px;
+    background: #020253;
+    color: #FFFFFF;
+    font-size: 22px;
+    align-self: center;
+
+}
+
+
+
+@media (max-width: 578px),
+(max-width: 991.98px) {
+    #container {
+        flex: 1;
+
+    }
+
+
+    #background {
+        height: 70vh;
+
+    }
+
+
+
+    #forme {
+        height: auto;
+        min-height: 60vh;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(35%);
+        background-size: contain;
+    }
+
+    h3 {
+        margin-top: 50px;
+        font-size: 24px;
+        height: auto;
+    }
+
+    p,
+    #solution {
+        font-size: 18px;
+        width: 180px;
+        margin: auto;
+        height: auto;
+
+    }
+
+
+    form {
+        width: 180px;
+        margin: auto;
+
+
+    }
+
+    label {
+        width: 180px;
+        font-size: 10px;
+        align-content: center;
+        margin-top: 0;
+
+    }
+
+    input {
+        width: 180px;
+        height: 20px;
+        border-bottom: 3px solid #020253;
+
+    }
+
+    #send {
+        height: 20px;
+        width: 180px;
+        font-size: 14px;
+        margin-top: 23px;
+    }
+
+
+}
