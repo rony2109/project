@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Satisfy&family=Varela+Round&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    font-family: Heebo, serif;
+    height: 100%;
+    overflow: hidden;
+}
+
+#background {
+    background-image: url(../images/Path15.png);
+    width: 100vw;
+    height: 590px;
+}
+
+
+#forme {
+    display: grid;
+    grid-template-rows: 129px 100px 400px;
+    background-color: #1A1A1AD4;
+    width: 569px;
+    height: 643px;
+    margin-top: 157px;
+    margin-right: 295px;
+}
+
+h3 {
+    font-family: Heebo, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: auto;
+    color: #FFFFFF;
+    font-size: 36px;
+    align-items: end;
+}
+
+p {
+
+    color: #F9F9F9;
+    font-size: 20px;
+    margin: auto;
+    width: 417px;
+    height: 58px;
+    text-align: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 418px;
+    height: 267px;
+    margin: auto;
+    margin-top: 44px;
+}
+
+label {
+    color: #F9F9F9;
+    width: 58px;
+    height: 24px;
+    align-content: end;
+}
+
+input {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #D31C75;
+    width: 418px;
+    height: 50px;
+}
+
+#send {
+    margin-top: 24px;
+    height: 50px;
+    width: 166px;
+    background: #D31C75 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+    font-size: 22px;
+}
+
+@media (max-width: 578px),
+(max-width: 991.98px) {
+    #background {
+        height: 213px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #forme {
+        grid-template-rows: 122px 66px 180px;
+        width: 299px;
+        height: 441px;
+        margin: auto;
+        margin-top: 89px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 15px;
+        width: 229px;
+        height: 66px;
+    }
+
+    form {
+        display: grid;
+        grid-template-rows: 52px 28px 52px 28px 50px;
+        align-items: end;
+        height: 181px;
+        width: 230px;
+        margin: auto;
+    }
+
+    label {
+        width: 230px;
+        height: 21px;
+        font-size: 14px;
+    }
+
+    input {
+        width: 230px;
+        height: 28px;
+    }
+
+    #send {
+        height: 33px;
+        width: 76px;
+        font-size: 15px;
+    }
+
+
+}

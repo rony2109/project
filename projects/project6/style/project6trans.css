@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Italianno&family=Playball&family=Satisfy&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    direction: rtl;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: #1AE0EC;
+    z-index: 1000;
+    height: fit-content;
+    align-items: flex-start;
+}
+
+label {
+    color: rgba(29, 39, 100, 255);
+}
+
+nav {
+    display: flex;
+}
+
+input[type="checkbox"] {
+    display: none;
+
+}
+
+#hamburger {
+    display: none;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    height: fit-content;
+    align-items: center;
+
+}
+
+nav ul li {
+    display: flex;
+}
+
+nav ul li a {
+    width: 150px;
+    text-decoration: none;
+    line-height: 2;
+    text-align: center;
+    font-size: 1.5em;
+    color: rgba(29, 39, 100, 255);
+}
+
+nav ul li a:hover {
+    background-color: rgba(29, 39, 100, 255);
+    color: rgb(187, 226, 239);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#logoName {
+    display: flex;
+    align-items: center;
+}
+
+.rony {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 100px;
+    border: 1px, solid, rgba(29, 39, 100, 255);
+}
+
+.logoName {
+    font-family: Playball, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: rgba(29, 39, 100, 255);
+    padding-left: 20px;
+}
+
+.opening {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/felixMedium.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin: auto;
+}
+
+.opening div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.opening div h1 {
+    font-family: hebbo;
+    font-size: 8rem;
+    color: rgb(230, 255, 255);
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 25px rgba(255, 255, 255, 0.5), 0 0 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.opening div p {
+    font-family: hebbo;
+    margin-top: 20px;
+    color: rgb(230, 255, 255);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+
+}
+
+#buttons {
+
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+
+}
+
+#buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1AE0EC;
+    width: 153px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(29, 39, 100, 255);
+    font-weight: bold;
+
+
+
+}
+
+#buttons a:hover {
+    background-color: rgba(29, 39, 100, 255);
+    color: rgb(230, 255, 255);
+    border: 1px solid #1AE0EC;
+
+}
+
+.progicons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(227, 227, 235);
+}
+
+.zhuiot {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(29, 39, 100, 255);
+    color: white;
+}
+
+
+
+#container {
+    display: flex;
+    width: 100vw;
+    height: 1014px;
+    flex-direction: column;
+    background-color: #EBFEFF;
+    align-items: center;
+}
+
+#project img {
+    width: 70vw;
+    size: cover;
+    margin-top: 112px;
+    box-shadow: 0px 0px 40px #00000066;
+}
+
+
+@media (max-width: 991.98px) {
+
+    .opening {
+        height: auto;
+    }
+
+
+    .opening div h1 {
+
+        font-size: 3rem;
+        padding-top: 80px;
+    }
+
+    .opening div p {
+        font-size: 2rem;
+        padding: 20px
+    }
+}
+
+@media (max-width: 578px) {
+
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rony {
+        margin-left: 0;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    input[type="checkbox"]:checked~.navbar-links {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    nav ul li {
+        flex-direction: column;
+        background-color: #1AE0EC;
+        margin: 0;
+        align-items: center;
+        padding: 14px;
+    }
+
+    .opening div h1 {
+
+        font-size: 3rem;
+        padding-top: 80px;
+
+    }
+
+    .opening div p {
+        font-size: 2rem;
+        padding: 20px
+    }
+
+    #container {
+        width: 100%;
+        height: 300px;
+    }
+
+    #project img {
+
+        width: 300px;
+        height: auto;
+        margin-top: 30px;
+    }
+
+
+}

@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Satisfy&family=Varela+Round&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    font-family: Heebo, serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+#container {
+    display: grid;
+    /* grid-template-columns: 835px 1085px; */
+    grid-template-columns: 44vw 56vw;
+    grid-template-rows: 100vh;
+    /* height: 1081px; */
+}
+
+
+#forme {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+
+}
+
+h3 {
+    font-family: Heebo, serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #020253;
+    font-size: 43px;
+    line-height: 63px;
+
+}
+
+p {
+
+    color: #020253;
+    font-size: 20px;
+    margin: auto;
+    width: 417px;
+    height: 58px;
+    line-height: 29px;
+
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 418px;
+    height: 257px;
+    margin: auto;
+}
+
+label {
+    color: #020253;
+    height: 24px;
+    align-content: end;
+    margin-top: 24px;
+
+}
+
+input {
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: none;
+    border-bottom: 4px solid #020253;
+    width: 418px;
+    height: 50px;
+}
+
+#send {
+    margin-top: 33px;
+    height: 50px;
+    width: 166px;
+    background: #020253;
+    color: #FFFFFF;
+    font-size: 22px;
+}
+
+#coffe {
+
+    width: 100%;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+#img1 {
+    width: 56vw;
+    /* width: 100%;
+    object-fit: contain;
+    overflow: hidden; */
+    /* width: 1085px;
+    height: 1080px; */
+}
+
+#img2 {
+    display: none;
+    /* width: 835px;
+    height: 1080px; */
+}
+
+
+@media (max-width: 578px),
+(max-width: 991.98px) {
+    #container {
+        display: flex;
+        flex-direction: column-reverse;
+        /* grid-template-rows: 219px 657px;
+        grid-template-columns: 370px; */
+        height: 876px;
+        width: 100%;
+    }
+
+    /* #coffe {
+        height: 219px;
+        width: 370px;
+    } */
+    #img1 {
+        display: none;
+    }
+
+    #img2 {
+        display: block;
+        /* width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center; */
+        width: 100%;
+        /* height: 219px; */
+    }
+
+    #forme {
+        /* grid-area: 2; */
+        height: 308px;
+        margin: auto;
+        margin-top: 47px;
+        width: 286px;
+    }
+
+    h3 {
+        font-size: 28px;
+        line-height: 41px;
+        width: 286px;
+
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 22px;
+        width: 286px;
+        margin: auto;
+
+    }
+
+    form {
+
+        height: 181px;
+        width: 286px;
+        margin: auto;
+
+
+    }
+
+    label {
+        width: 286px;
+        height: 14px;
+        font-size: 10px;
+        margin-top: 16px;
+        align-content: center;
+
+    }
+
+    input {
+        width: 286px;
+        height: 28px;
+        border-bottom: 3px solid #020253;
+
+    }
+
+    #send {
+        height: 34px;
+        width: 286px;
+        font-size: 14px;
+        margin-top: 23px;
+    }
+
+
+}
