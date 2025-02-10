@@ -120,17 +120,17 @@ input {
     h1 {
         font-size: 3rem;
         position: fixed;
-        top: 25vh;
-        margin-left: 20%;
+        top: 50px;
+        margin-left: 40%;
     }
 
     form {
         position: fixed;
-        bottom: 25vh;
+        bottom: 50px;
         margin: 0 auto;
         padding: 0;
         width: 200px;
-        padding-right: 10%;
+        padding-right: 15%;
 
     }
 
