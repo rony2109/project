@@ -259,9 +259,12 @@ input {
 
     #orangeBorderBottom {
         display: block;
+
         width: 100%;
         background-color: #FDBD03;
-        height: 18px;
+        min-height: 18px;
+
+
 
     }
 
