@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Italianno&family=Playball&family=Satisfy&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Heebo:wght@100..900&family=Italianno&family=Playball&family=Satisfy&family=Varela+Round&display=swap');
+
 
 * {
     margin: 0;
@@ -9,7 +10,7 @@
 body {
     direction: rtl;
     /* padding-top: 100px; */
-    font-family: Heebo, sans-serif;
+    font-family: 'Frank Ruhl Libre', sans-serif;
 }
 
 header {
@@ -119,7 +120,8 @@ nav ul li a:hover {
 }
 
 #opening div h1 {
-    font-family: hebbo;
+    font-family: 'Frank Ruhl Libre', sans-serif;
+    font-weight: bold;
     font-size: 10rem;
     color: rgb(230, 255, 255);
     text-align: center;
@@ -128,13 +130,11 @@ nav ul li a:hover {
 }
 
 #opening div p {
-    font-family: hebbo;
+    font-family: 'Frank Ruhl Libre', sans-serif;
     margin-top: 30px;
     color: rgb(230, 255, 255);
     font-size: 3rem;
     text-align: center;
-    /* background-color: rgb(14, 14, 66, 0.5);
-    border-radius: 20%; */
     margin: auto;
 }
 
@@ -173,7 +173,6 @@ nav ul li a:hover {
     width: 150px;
     height: 150px;
     justify-content: center;
-    /* padding-top: 50px; */
 }
 
 #aboutme h1 {
@@ -185,7 +184,7 @@ nav ul li a:hover {
 }
 
 #aboutme p {
-    font-family: Hebbo, sans-serif;
+    font-family: 'Frank Ruhl Libre', sans-serif;
     display: block;
     margin: auto;
     width: 600PX;
@@ -219,7 +218,6 @@ section a {
 }
 
 #myJobs {
-    /* margin-top: 50px; */
     padding-top: 50px;
     display: flex;
     flex-direction: column;
@@ -230,7 +228,6 @@ section a {
 }
 
 #myJobs h2 {
-    /* display: block; */
     color: darkblue;
     font-size: 5rem;
     text-align: center;
@@ -239,7 +236,6 @@ section a {
 #gallery {
     margin-top: 50px;
     display: grid;
-    /* grid-template-columns: repeat(3, 405px); */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 518px);
     gap: 20px;
@@ -265,27 +261,19 @@ section a {
 }
 
 .miniPPic {
-    /* height: fit-content; */
     width: 100%;
     height: 100%;
-    /* object-fit: cover; */
-    /*  object-position: center; */
     border-radius: 15px 15px 0 0;
 
 }
 
 #picLink {
-    /* height: fit-content; */
     width: 100%;
     height: 100%;
-    /* object-fit: cover;
-            object-position: center; */
-    /* border-radius: 15px 15px 0 0; */
 
 }
 
 #miniproject h3 {
-    /* padding-top: 30px; */
     font-size: 1.7rem;
     text-align: center;
     padding-top: 15px;
@@ -296,7 +284,7 @@ section a {
 #miniproject p {
     width: 80%;
     font-size: 1rem;
-    text-align: justify;
+    text-align: center;
 
     margin: auto;
 
@@ -327,26 +315,17 @@ section a {
     text-align: center;
     line-height: 1;
     margin-top: 0px;
-    /* align-items: flex-start; */
 }
 
 #contact {
     margin-top: 80px;
-    /* margin-bottom: 50px; */
     display: flex;
-    /* width: 100vw; */
-    /* grid-template-columns: repeat(2, 1fr); */
-    /* align-items: center;
-    justify-content: center; */
     background-color: rgba(29, 39, 100, 255);
-    /* background-color: fuchsia; */
     overflow: hidden;
 }
 
 #contact img {
     height: 600px;
-    /* width: fit-content; */
-    /* object-fit: cover; */
     background-size: cover;
     background-position: center;
 
@@ -367,15 +346,6 @@ form {
     line-height: 1.5;
 }
 
-/* form button {
-    background-color: #1AE0EC;
-    border-radius: 25px;
-    border: 1px solid darkblue;
-}
-
-form button:hover {
-    font-weight: bold;
-} */
 
 form h3 {
     font-size: 2rem;
@@ -407,24 +377,17 @@ form input {
 #envelop {
 
     margin: auto;
-    /* background-color: transparent; */
-    /* transform: rotate(-30deg); */
     background-color: transparent;
     object-fit: cover;
 }
 
 #contactline {
     display: grid;
-    /* grid-template-rows: repeat(2, 60px); */
     grid-template-rows: max-content;
     grid-template-columns: repeat(6, 1fr);
     padding-top: 20px;
     background-color: #1AE0EC;
-    /* height: 100px; */
     align-items: center;
-
-
-    /* justify-content: space-around; */
     justify-items: center;
 
 }
@@ -494,12 +457,9 @@ form input {
 
     nav ul li {
         flex-direction: column;
-        /* width: 100vw; */
         background-color: #1AE0EC;
         margin: 0;
         align-items: center;
-        /* width: 200%; */
-        /* margin: auto; */
         padding: 14px;
     }
 
@@ -553,14 +513,6 @@ form input {
         font-size: 40px;
     }
 
-    /* 
-    #contact img {
-        display: none;
-
-    } */
-
-
-
 
     section p {
         font-family: Hebbo, sans-serif;
@@ -577,7 +529,6 @@ form input {
         display: flex;
         flex-direction: column-reverse;
         padding-bottom: 50px;
-        /* width: 393px; */
         justify-content: center;
         align-items: center;
     }
@@ -608,20 +559,13 @@ form input {
 
     #contactline {
         display: grid;
-        /* grid-template-rows: repeat(2, 60px); */
         grid-template-rows: repeat(3, 100px);
         grid-template-columns: repeat(2, 1fr);
-        /* padding-top: 20px; */
         background-color: #1AE0EC;
-        /* height: 100px; */
         align-items: center;
-
-
-        /* justify-content: space-around; */
         justify-items: center;
 
     }
-
 
 
 }
