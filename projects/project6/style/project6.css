@@ -189,7 +189,7 @@ input {
 
     #contact {
         border-bottom: none;
-        flex: 1;
+        /* flex: 1; */
     }
 
     h1 {
@@ -243,7 +243,7 @@ input {
         width: 100%;
         margin: 0;
         justify-content: space-around;
-        margin-top: auto;
+        margin-top: 100px;
     }
 
     #orange {
@@ -262,7 +262,6 @@ input {
         width: 100%;
         background-color: #FDBD03;
         height: 18px;
-        margin-top: auto;
 
     }
 
